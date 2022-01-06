@@ -1,0 +1,112 @@
+/* css box model, animations, flexbox, positions */
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* classes in css
+. -> represents class
+*/
+.color-purple{
+    color: purple;
+}
+.text-center{
+    text-align: center;
+}
+
+/* .css-box-model
+border
+padding -> space around the element / spacing inside the border
+margin -> spacing outside the border is margin
+*/
+
+.box-model{
+    border: 5px solid purple;
+    padding:30px;
+    margin: 30px;
+}
+
+.card{
+    border:1px solid lightgray;
+    width: 320px;
+    margin: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.img-res{
+    width: 100%;
+}
+.rounded{
+    border-radius: 12px;
+}
+.rounded-top{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card-body{
+    padding: 20px;
+}
+.btn{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 24px;
+}
+.user{
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+}
+
+.animation-demo{
+    background-color: teal;
+    height: 60px;
+    width: 60px;
+    display: none;
+    border-radius: 12px;
+    animation-name:demo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+@keyframes demo{
+    /* from{
+        background-color: teal;
+    }
+    to{
+        background-color: blue;
+        margin-left: 400px;
+        transform: rotate(360deg);
+        height: 100px;
+        width: 100px;
+    } */
+0%{
+    background-color: teal;
+    margin-top: 400px;
+    transform: rotate(360deg);
+   
+}
+50%{
+    background-color: teal;
+    margin-left: 400px;
+    transform: rotate(360deg);
+    height: 100px;
+    width: 100px;
+}
+100%{
+    background-color: teal;
+    margin: 0px;
+    transform: rotate(360deg);
+    height: 60px;
+    width: 60px;
+}
+
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
