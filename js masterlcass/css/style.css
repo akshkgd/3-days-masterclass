@@ -1,0 +1,21 @@
+.container{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    font-size: 46px;
+}
+.counter{
+    font-size: 96px;
+}
+.btn{
+    background-color: blueviolet;
+    color: white;
+    padding: 9px 24px;
+    border: none;
+    border-radius: 44px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(94, 12, 172)
+}
