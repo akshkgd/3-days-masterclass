@@ -3,19 +3,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .title{
-    font-size: 46px;
+    font-size: 66px;
 }
 .counter{
     font-size: 96px;
 }
+
 .btn{
-    background-color: blueviolet;
+    background-color: purple;
     color: white;
-    padding: 9px 24px;
+    padding: 12px 26px;
     border: none;
-    border-radius: 44px;
+    border-radius: 66px;
     cursor: pointer;
-}
-.btn:hover{
-    background-color: rgb(94, 12, 172)
+    text-decoration: none;
+    font-size: 17px;
 }
