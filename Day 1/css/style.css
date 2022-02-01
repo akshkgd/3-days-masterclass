@@ -1,0 +1,136 @@
+/* css box model, animations, flexboxes, positions */
+
+
+/* class */
+.green{
+    color: green;
+}
+
+/* css box model
+border: thickness style color
+padding: spacing inside the border
+margin:
+*/
+
+.box-model{
+    border: 10px solid red;
+    border-radius: 24px;
+    padding: 30px;
+    margin: 100px;
+}
+.card{
+    border:1px solid lightgray;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 20px;
+    width: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-res{
+    width:100%;
+    border-radius: 12px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 5px 16px;
+    border-radius: 44px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.user{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+.text-center{
+    text-align: center;
+}
+
+.card-bv{
+    display: none;
+    background-color: #fce354;
+    padding: 140px 40px;
+    border-radius: 12px;
+    margin: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-light{
+    background-color: white;
+    padding: 10px 32px;
+    border-radius: 66px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.title{
+    font-size: 42px;
+    font-weight: bolder;
+}
+.animate{
+    /* background-color: coral; */
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    animation-name: demo;
+    animation-duration: 2s;
+    animation-iteration-count: 20;
+    animation-direction: alternate;
+}
+@keyframes demo{
+    from{
+        
+    }
+    to{
+        
+        margin-left: 900px;
+       
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
+/* @keyframes demo{
+    0%{
+        margin-left: 900px;
+        height: 30px;
+        width: 30px;
+        transform: rotate(0deg);
+    }
+    25%{
+        margin-left: 900px;
+        height: 30px;
+        width: 30px;
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    51%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+} */
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.feedback{
+    font-size: 18px;
+    line-height: 24px;
+}
+.d-flex{
+    display: flex;
+    margin-top: 24px;
+}
+.student-details h3,p{
+    margin: 0;
+}
+.student-details{
+    margin: 10px 0 0 10px;
+}
