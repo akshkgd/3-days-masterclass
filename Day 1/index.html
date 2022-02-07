@@ -1,58 +1,64 @@
+<!-- extenstions -> emmet, prettier, live server -->
+<!-- css-> box model, postions, flexbox -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>CSS Masterclass</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <style>
+        h1{
+            text-align: center;
+            color: purple;
+
+        }
+    </style> -->
 </head>
 <body>
-    <!-- <div class="box-model">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nesciunt ex ad possimus. Voluptatibus laudantium molestias temporibus ipsum quam nobis aperiam asperiores. Reiciendis facilis maxime dolorum iure sequi? Libero voluptatem ut earum hic itaque commodi soluta temporibus labore, adipisci doloremque amet, cumque ipsum praesentium! Eveniet excepturi tenetur voluptatem totam. Modi voluptatum assumenda debitis optio delectus incidunt aut facilis blanditiis quam. Voluptate quam, asperiores exercitationem nemo consequuntur ipsum officiis porro nihil repellendus harum? Quas minima nostrum, earum dolores in fugiat, saepe laudantium quod impedit optio culpa obcaecati natus! Totam maiores doloremque facere maxime. Rerum quidem eos voluptates cum illum ad consequatur eligendi, distinctio animi. Perferendis quos vero consequuntur commodi quas cupiditate inventore. In aliquam neque error repellat sapiente ipsam eum officia numquam sequi totam dolores laborum, id doloremque debitis! Eos dolorem sint nisi a maiores odit, nostrum provident necessitatibus optio animi unde totam nesciunt ipsam qui cum doloribus quidem explicabo distinctio amet minima ullam error recusandae? Impedit dignissimos beatae vel quos repudiandae et velit sapiente, deleniti fugiat molestias porro numquam perferendis modi laboriosam ut nesciunt aliquid sunt expedita officia consequuntur sequi temporibus rerum. Modi quaerat commodi obcaecati quia architecto eum natus id ab eligendi, laborum excepturi consequuntur? Perspiciatis architecto laudantium animi.
-    </div> -->
-    <div class="card-bv text-center">
-        <img src="./img/mood-about.svg" alt="">
-        <h1 class="title">Because traffic has always sucked</h1>
-        <p>Where did the Waze story begin, and how did we grow to over 140 million taking down traffic?</p>
-        <a href="" class="btn-light">Learn About Us</a>
-    </div>
+    <!-- <h1 style="" class="title">Welcome to the CSS Masterclass</h1> -->
+    <!-- implementation of css
+    in line css -> 1
+    internal css
+    external css
+    -->
 
-<div class="card-container">
+    <div class="box-model">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus tempore nam praesentium magni molestiae debitis dolore nesciunt autem deserunt, quaerat consectetur iusto eaque et omnis obcaecati eveniet eos eum repudiandae.
+    </div>
+<div class="flex-container">
     <!-- <div class="card">
-        <img src="https://source.unsplash.com/1600x700/?food" class="img-res" alt="">
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi pariatur voluptatum iste aliquam voluptates asperiores accusamus ad nihil tenetur.</p>
-        <a href="" class="btn">Know More</a>
-    </div> -->
-
-
+        <img src="https://source.unsplash.com/1600x800/?nature" class="card-img" alt="">
+        <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis est dolores soluta error nemo voluptates iste doloribus.</p>
+    </div>
     <div class="card">
-        <p class="feedback">Lorem ipsum dolor sit amet consectetebiti Lorem ipsum dolor sit amet consectetur. apiente error voluptatem, optio dolorem voluptatibus iste eveniet.</p>
-        <div class="d-flex">
-            <img src="./img/circle-cropped.png" class="user" alt="">
-            <div class="student-details">
-                <h3>Himanshu Srivastava</h3>
-                <p>Student</p>
-            </div>
-        </div>
+        <img src="https://source.unsplash.com/1600x800/?food" class="card-img" alt="">
+        <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis est dolores soluta error nemo voluptates iste doloribus.</p>
     </div>
-    <div class="card text-center">
-        <img src="./img/ashish black.png" class="user" alt="">
-        <h2>Hi, i am Ashish</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente atque ipsam consequuntur ipsa consequatur culpa ab impedit rerum maxime.</p>
-        <a href="" class="btn">Download Resume</a>
+
+    <div class="google-card ">
+        <img src="./google-fi-card.png" alt="" class="card-img">
+        <p class="small">SAVE UP TO $414 OVER 2 YEARS</p>
+        <h2 class="fi-title">Meet Pixel Pass.</h2>
+        <p>Our easy subscription comes with a new Pixel phone, and much more. Starts at $45/mo.</p>
+        <button class="btn">Get Started</button>
+    </div> -->
+    
+</div>
+<div class="container">
+    <div class="w-50 cta">
+        <h1 class="heading">Super fast coverage, 5G included</h1>
+        <p>Fi gives you great coverage, coast to coast. With a phone designed for Fi, you'll get even better coverage as it intelligently switches between networks and secure Wi-Fi connections. All plans include nationwide 5G for supported phones.
+        </p>
+        <button class="btn">See Coverage</button>
     </div>
-    <div class="card text-center">
-        <img src="./img/ashish black.png" class="user" alt="">
-        <img src="./img/circle-cropped.png" class="user" alt="">
-        <h2>Team of Codekaro</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente atque ipsam consequuntur ipsa consequatur culpa ab impedit rerum maxime.</p>
-        <a href="" class="btn">Meet Now</a>
+    <div class="w-50">
+        <img src="./hero.png" class="img-res" alt="">
     </div>
 </div>
-
-
-    
 </body>
 </html>

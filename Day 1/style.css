@@ -1,0 +1,90 @@
+/* box model, animations, flexbox, positions */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.small{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+/* box model
+border
+padding -> spacing inside the border
+margin -> spacing outside the border
+*/
+
+.box-model{
+    width: 400px;
+    border:5px solid red;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px;
+    display: none;
+}
+.card{
+    width: 300px;
+    box-shadow: 0px 0px 6px rgb(187, 187, 187);
+    margin: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    height: 400px;
+
+}
+.google-card{
+    width: 400px;
+    box-shadow: 0px 0px 6px rgb(187, 187, 187);
+    margin: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    height: 400px;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 12px;
+
+}
+.fi-title{
+    margin-top: 0;
+}
+.btn{
+    border: 1px solid rgb(28, 115, 255);
+    color: rgb(28, 115, 255);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.btn:hover{
+    background-color: rgb(207, 231, 255);
+}
+.flex-container{
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.container{
+    display: flex;
+    margin: 0 8%;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+.img-res{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+.heading{
+    font-size: 46px;
+}
