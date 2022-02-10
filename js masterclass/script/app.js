@@ -1,61 +1,76 @@
-// variables, data types, functions, arrow functions, DOM , Projects -> (ES6)
+// variables, data types, functions, arrow functions, DOM, Projects => ES6
 
-//variables => let and const  -> (var)
-// data types: string, number, boolean, undefined, null, objects
 
-// let name = "ashish";
+// variables -> let and const, (var?? -> es5 ->deprecated)
+//data types -> number, string, boolean, undefined, null, object, array
+
+
+let name = "John Doe";
 // console.log(typeof name);
-let age = 24.776;
+
+let age = 24.67;
 // console.log(typeof age);
-let isAlive = 'false';
+
+
+let isAlive = false;
 // console.log(typeof isAlive);
 
-// objects -> Array, objects
-let hobbies = ['cricket', 'football', 'reading'];
-// console.log(hobbies[5]);
+
+let hobbies = ['coding', 'music', 'movies', 'swimming'];
+// hobbies.push('teaching');
+// hobbies[1] = 'singing';
+// hobbies.pop();
+hobbies.splice(2, 1);
+// console.log(hobbies);
 
 
 let user = {
     name: 'ashish',
+    email: 'ashish@codekaro.in',
     age: 24,
-    address: '123 main st, chicago, IL',
-    mobile: 123456678899,
-    isAlive: true,
-    userName: 'ashish123',
+    address: 'kolkata'
 }
-user.email = 'ashish@gmail.com';
-delete user.mobile;
-// console.log(user);
+
+user.mobile = '9876543210';
+// delete user.age;
+// console.log(user)
 
 
 
-//functions
+// functions
 
 // function grinder(item){
-//     console.log('grinding....', item);
+//     console.log('grinding...', item);
 // }
 
 // grinder('tomatoes');
-// grinder('sugar, milk, banana');
+// grinder('potatoes');
 
 
-// function cube(num){
-//     console.log(num*num*num);
-// }
 
-// cube(13);
+function sqr(num){
+    console.log(num*num)
+}
+let number = 4
+sqr(number);
 
-// //arrow functions
-// sqr = (num) => console.log(num*num);
+function calculateTds(salary){
+ let tds = salary * 0.1;
+ return tds;
+}
+
+let calculatedTds = calculateTds(12000);
+console.log(calculatedTds);
+let inHand = 15000 - calculatedTds;
+console.log(inHand);
 
 
-// sqr(12)
+// arrow function -> es6
 
+cube = (num) => num*num*num;
 
-// greet = (name) => console.log('hello ', name);
+functionName = () => {
+    console.log('arrow function syntax');
+}
 
-// let name = prompt('enter your name');
-// greet(name);
-
-
-// DOM
+console.log(cube(2))
