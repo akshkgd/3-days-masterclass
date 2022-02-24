@@ -1,0 +1,105 @@
+/* css box model, animations, flexbox, positions */
+
+/* css class -> .className */
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.text-center{
+    text-align: center;
+}
+
+/* css box model
+border
+padding -> spacing inside the border
+margin -> spacing outside the border
+*/
+
+
+
+.box-model{
+    border: 5px solid blueviolet;
+    padding: 20px;
+    margin: 20px;
+    display: none;
+}
+.card{
+    /* border:2px solid blueviolet; */
+    box-shadow: 0 0 10px lightgray;
+    width: 320px;
+    padding:12px;
+    margin: 8px;
+    border-radius: 16px;
+    
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.btn{
+    background-color: black;
+    color:white;
+    padding: 7px 18px;
+    text-decoration: none;
+    border-radius: 66px;
+    display: inline-block;
+    margin: 4px 0 4px 0;
+}
+.user{
+    height: 86px;
+    width: 86px;
+    border-radius: 50%;
+}
+
+
+.demo{
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    background-color: white;
+    animation-name: demo;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+@keyframes demo{
+    from{
+        background-color: white;
+    }
+    to{
+        /* background-color: blueviolet; */
+        margin-left: 420px;
+        transform: rotate(360deg);
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+.animate-image {
+    height: 120px;
+    display: none;
+}
+.animate-image:hover{
+    animation-name: animate-image;
+    animation-duration: 2s;
+}
+
+@keyframes animate-image{
+    from{
+        height: 120px;
+    }
+    to{
+        height: 200px;
+    }
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
