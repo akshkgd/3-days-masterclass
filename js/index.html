@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the javascript Masterclass</h1>
+    <!-- <div class="container">
+        <img src="./connect-guests@2x-49ce09.jpeg" id="img" class="img" alt="">
+        <h1 id="title" >Have you joined the CSS masterclass yesterday?</h1>
+        <button class="btn" onclick="joined()">Yes I Joined</button>
+    </div> -->
+
+
+    <div class="container">
+        
+        <h1 id="title" >Javascript Cube Counter Application</h1>
+        <p>This is a cube counter application made in the codekaro's masterclass</p>
+        <h1 id="result"></h1>
+        <input type="number" onkeyup="cube()" placeholder="Enter a number" id="number">
+        <button class="btn" onkeydown="cube()">Calculate the cube</button>
+    </div>
 
     <!-- <script>
         console.log('this is a live masterclass');
