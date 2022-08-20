@@ -1,0 +1,76 @@
+/* food ordering webpage -> css box model, css animations, css flexbox */
+/* the class name always starts with . */
+.red{
+    color: red;
+}
+
+/* css box model
+border -> border-width, border-style, border-color
+padding
+margin
+*/
+
+.card{
+    /* border: 1px solid lightgray; */
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    padding: 10px;
+    margin:8px;
+    width: 320px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card-img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 80px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.demo{
+    width:100px;
+    height:100px;
+    background-color: tomato;
+
+    animation-name: demo-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+}
+
+/* destination -> @keyframes */
+
+@keyframes demo-animation{
+    100%{
+        transform: rotate(360deg);
+        margin-left: 1100px;
+        border-radius: 50%;
+    }
+}
+
+.card:hover{
+    animation-name: card-animation;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}   
+
+@keyframes card-animation{
+
+    100%{
+        transform: rotate(2deg);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+    }
+}
