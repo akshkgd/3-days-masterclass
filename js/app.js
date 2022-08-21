@@ -1,51 +1,43 @@
-// es6 => cube counter, bill split application
-// variables, functions, DOM 
+// bill splitting application
+// cube counter app
+//variables, functions, DOM
+//ES6
 
-// console.log('app.js is connected!!')
+//variables -> temp storage => var, let and const
+let supportEmail = 'ashish@gmail.com';
+supportEmail = 'yash@codekaro.in';
+// console.log(supportEmail)
 
-//variables -> temp. storage  => var, let and const
-let email = 'ashish@gmail.com';
-email = 'yash@gmail.com'
-// console.log(email);
-
-let age = 24;
-age = 28;
-// console.log(age)
+//functions
 
 // function grinder(items){
 //     console.log('grinding...', items)
 // }
 
 // grinder('tomatoes');
-// grinder('onion');
-
-
+// grinder();
 
 // function add(num1, num2){
-//     console.log('The sum is: ', num1 + num2 )
+//     console.log(num1+ num2)
 // }
 
-// add(13,5)
-
-// process salary -> deduct the tds from the salary
+// add(2,31);
+// add(23,23)
 //tds is 10%
-
-function tds(name, salary){
-    let tds = salary * 0.1;
-    let inHand = salary - tds;
-    console.log('The salary for', name , 'of rs.', inHand ,  'is processed.')
+function processSalary(name, salary){
+    let tds = salary * .1;
+    console.log('The salary is processed for', name, ' of rupees ', salary-tds)
 }
+// processSalary('ashish', 50000)
+// processSalary('himanshu', 80000)
 
-// tds('ashish', 40000);
-// tds('nayan', 86000)
 
-function joined(){
-    document.getElementById('img').style.display = 'block';
-    document.getElementById('title').innerHTML = 'Congratulations on Joining the masterclass!!'
+function clicked(){
+    document.getElementById('title').innerHTML = 'The button has been clicked!'
 }
 
 function cube(){
-   let num =  document.getElementById('number').value;
+    let num = document.getElementById('number').value;
     let result = num * num * num;
     document.getElementById('result').innerHTML = result;
 }
