@@ -1,4 +1,6 @@
-<!-- emmet, live server -->
+<!-- emmet -> auto complete the html
+live server -> live code updates
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,24 +12,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <div class="container">
-        <h1 id="title">Welcome to the javascript Masterclass</h1>
-        <button class="btn" onclick="clicked()">Click the button</button>
-    </div> -->
+    <!-- <h1 id="title">Javascript masterclass</h1>
+    <button class="btn" onclick="btnClick()">Click this button</button> -->
 
+    <!-- currency converter -->
 
     <div class="container">
-        <h1 id="title">Javascript Cube Counter</h1>
-        <p>Simple cube counter made with javascript. Enter any number to calculate the cube of it!!</p>
-        <h1 id="result"></h1>
-        <input type="number" id="number" placeholder="Enter a number">
-        <button class="btn" onclick="cube()">Calculate the cube</button>
+        <h1>USD to INR conversions</h1>
+        <p>Enter the value in USD to get the exact value in INR</p>
+        <h1 id="inr"></h1>
+        <input type="text" id="usd" placeholder="Enter USD ">
+        <button class="btn" onclick="convertUsd()">Convert to INR</button>
     </div>
 
+    <!-- internal javascript code -->
     <script>
-        console.log('codekaro')
+        // console.log('codekaro');
     </script>
 
+    <!-- external javascript code -->
     <script src="app.js"></script>
 </body>
 </html>

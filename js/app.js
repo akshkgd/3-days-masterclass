@@ -1,43 +1,27 @@
-// bill splitting application
-// cube counter app
+//currency converter -> from usd to inr
+//bill splitting application
+
 //variables, functions, DOM
-//ES6
-
-//variables -> temp storage => var, let and const
-let supportEmail = 'ashish@gmail.com';
-supportEmail = 'yash@codekaro.in';
-// console.log(supportEmail)
-
-//functions
+// var -> var, let and const 
+let email = 'ashish@gmail.com';
+email = 'arpit@codekaro.in'
+// var name = 'ashish';
+// const mobile = 1234444;
+// console.log(email);
 
 // function grinder(items){
 //     console.log('grinding...', items)
 // }
 
 // grinder('tomatoes');
-// grinder();
+// grinder('onion');
 
-// function add(num1, num2){
-//     console.log(num1+ num2)
-// }
-
-// add(2,31);
-// add(23,23)
-//tds is 10%
-function processSalary(name, salary){
-    let tds = salary * .1;
-    console.log('The salary is processed for', name, ' of rupees ', salary-tds)
-}
-// processSalary('ashish', 50000)
-// processSalary('himanshu', 80000)
-
-
-function clicked(){
-    document.getElementById('title').innerHTML = 'The button has been clicked!'
+function btnClick(){
+    document.getElementById('title').innerHTML = 'Button clicked...'
 }
 
-function cube(){
-    let num = document.getElementById('number').value;
-    let result = num * num * num;
-    document.getElementById('result').innerHTML = result;
+function convertUsd(){
+    let usd = document.getElementById('usd').value;
+    let inr = (usd*79.79).toFixed(2)
+    document.getElementById('inr').innerHTML = inr;
 }
