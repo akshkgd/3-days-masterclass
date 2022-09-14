@@ -1,0 +1,61 @@
+/* food ordering webpage */
+/* box model, css flexbox, css animations */
+
+/* class name always starts with a dot */
+.red{
+    color: red;
+}
+
+/* box model
+border -> thickness, style, color
+padding
+margin
+*/
+
+.card{
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    width: 320px;
+    padding: 10px;
+    margin: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card-img{
+    width: 100%;
+    height: 180px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.demo{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    animation-name: sachin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes sachin{
+    100%{
+        border-radius: 50%;
+        background-color: blueviolet;
+        margin-left: 600px;
+        transform: rotate(360deg);
+    }
+}
+.card:hover{
+    animation-name: card;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes  card {
+    100%{
+        /* width: 350px; */
+        transform: rotate(-3deg);
+    }
+}
