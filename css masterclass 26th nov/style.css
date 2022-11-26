@@ -1,0 +1,45 @@
+/* css box model, css animations, css flexbox => 100 designs */
+/* responsive food ordering webpage */
+
+
+/* box model
+    border => thickness, style, color;
+    padding => 
+    margin => 
+*/
+.card{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    width: 340px;
+    padding:10px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 200ms;
+}
+.card:hover{
+    /* width: 400px; */
+    transform: rotate(4deg);
+    border:1px solid #eee;
+    background-color: #eee;
+    border-radius: 22px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+
+}
+.card-desc{
+    font-size: 14px;
+}
+.btn{
+    background-color: black;
+    border:none;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
