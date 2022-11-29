@@ -1,0 +1,41 @@
+/* css box model, css animations, css flexbox => 100 designs*/
+/* responsive food ordering webpage */
+
+/* css box model
+border => thickness, style, color;
+padding
+margin
+*/
+.card{
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    width: 340px;
+    padding: 10px;
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 200ms;
+}
+.card:hover{
+    /* width: 430px; */
+    transform: rotate(4deg);
+    border:1px solid rgb(225, 193, 255);
+    border-radius: 22px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+
+}
+.btn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border:none;
+    padding: 12px;
+    border-radius: 9px;
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
