@@ -1,0 +1,45 @@
+/* responsive food ordering webpage */
+/* css box model, css flexbox, css animations */
+
+/* box model
+border => thickness, style, color
+padding
+margin
+*/
+/* class name always starts with a dot */
+.card{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    width: 320px;
+    padding: 10px;
+    margin: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 300ms;
+}
+.card:hover{
+    /* transform: rotate(360deg); */
+     /* border:1px solid #eee; */
+    /* box-shadow: 0 3px 12px #eee; */
+    /* background-color: #eee; */
+    /* width: 400px; */
+    transform: rotate(4deg);
+}
+.card p{
+    font-size: 14px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border:none;
+    padding: 12px;
+    border-radius: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
