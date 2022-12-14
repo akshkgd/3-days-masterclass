@@ -1,7 +1,3 @@
-<!-- emmet -> auto complete the html
-live server -> live code updates
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,25 +8,26 @@ live server -> live code updates
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <h1 id="title">Javascript masterclass</h1>
-    <button class="btn" onclick="btnClick()">Click this button</button> -->
+    <!-- <div class="container">
+        <img src="./connect-guests@2x-49ce09.jpeg" id="img" class="img" alt="">
+        <h1 id="title" >Have you joined the CSS masterclass yesterday?</h1>
+        <button class="btn" onclick="joined()">Yes I Joined</button>
+    </div> -->
 
-    <!-- currency converter -->
 
     <div class="container">
-        <h1>USD to INR conversions</h1>
-        <p>Enter the value in USD to get the exact value in INR</p>
-        <h1 id="inr"></h1>
-        <input type="text" id="usd" placeholder="Enter USD ">
-        <button class="btn" onclick="convertUsd()">Convert to INR</button>
+        
+        <h1 id="title" >Javascript Cube Counter Application</h1>
+        <p>This is a cube counter application made in the codekaro's masterclass</p>
+        <h1 id="result"></h1>
+        <input type="number" onkeyup="cube()" placeholder="Enter a number" id="number">
+        <button class="btn" onkeydown="cube()">Calculate the cube</button>
     </div>
 
-    <!-- internal javascript code -->
-    <script>
-        // console.log('codekaro');
-    </script>
-
-    <!-- external javascript code -->
+    <!-- <script>
+        console.log('this is a live masterclass');
+    </script> -->
+    <!-- src stands for source -->
     <script src="app.js"></script>
 </body>
 </html>

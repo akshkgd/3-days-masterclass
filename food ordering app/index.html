@@ -12,16 +12,32 @@ live server -> live updates of the code -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="orderSuccessful" id="orderSuccessful">
+        <div class="text-center">
+            <img src="./booking-congrats.4d81c4bf.svg" alt="">
+            <h2>We have received your order successfully!</h2>
+            <div class="details">
+                <div class="detailsChild"><p>Item: </p> <p id="name">Veg Supreme Pizza</p></div>
+                <div class="detailsChild"><p>Price </p> <p id="price">99</p></div>
+                <div class="detailsChild"><p>GST </p> <p id="gst">117</p></div>
+                <div class="detailsChild"><p>Delivery Charges </p> <p id="deliveryCharge">40</p></div>
+                <div class="detailsChild"> <strong> <p>Total </p></strong> <strong> <p id="total">140</p></strong></div>
 
-    <div class="flex">
-        <div class="food-items">
+            </div>
+        </div>
+    
+        
+    </div>
+    <div class="flex" id="foodItems">
+        <div class="food-items"  >
             <div class="food-header">
             <img src="https://source.unsplash.com/1600x800/?burger" class="food-img" alt="">
             <p class="ratings">4.3 Ratings (3429)</p>
             </div>
-            <h3>Veg Supreme Burger</h3>
+            <h3 >Veg Supreme Burger</h3>
+            <h4>Rs 99</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam exercitationem voluptates esse odio!</p>
-            <!-- <button class="btn">Order Now</button> -->
+            <button class="btn" id="btn" data-name="Veg Supreme Burger" data-price="99"  >Order Now</button>
         </div>
     
         <div class="food-items">
@@ -30,23 +46,28 @@ live server -> live updates of the code -->
             <p class="ratings">4.1 Ratings (1498)</p>
             </div>
             <h3>Green Salad</h3>
+            <h4>Rs 199</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam exercitationem voluptates esse odio!</p>
-            
+            <button class="btn" id="btn" data-name="Green Salad" data-price="199">Order Now</button>
         </div>
 
         <div class="food-items">
             <div class="food-header">
-            <img src="https://source.unsplash.com/1600x800/?juice" class="food-img" alt="">
+            <img src="https://source.unsplash.com/1600x800/?pizza" class="food-img" alt="">
             <p class="ratings">4.2 Ratings (1498)</p>
             </div>
-            <h3>Fresh Juices</h3>
+            <h3>Veg Supreme Pizza</h3>
+            <h4>Rs 399</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam exercitationem voluptates esse odio!</p>
-            <!-- <button class="btn">Order Now</button> -->
+            <button class="btn" id="btn" data-name="Veg Supreme Pizza" data-price="399">Order Now</button>
         </div>
     </div>
     
 
 
     <button class="help-btn">Chat with us!</button>
+
+
+    <script src="./app.js"></script>
 </body>
 </html>

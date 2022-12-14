@@ -1,13 +1,16 @@
-//currency converter -> from usd to inr
-//bill splitting application
+// es6 => cube counter, bill split application
+// variables, functions, DOM 
 
-//variables, functions, DOM
-// var -> var, let and const 
+// console.log('app.js is connected!!')
+
+//variables -> temp. storage  => var, let and const
 let email = 'ashish@gmail.com';
-email = 'arpit@codekaro.in'
-// var name = 'ashish';
-// const mobile = 1234444;
+email = 'yash@gmail.com'
 // console.log(email);
+
+let age = 24;
+age = 28;
+// console.log(age)
 
 // function grinder(items){
 //     console.log('grinding...', items)
@@ -16,12 +19,33 @@ email = 'arpit@codekaro.in'
 // grinder('tomatoes');
 // grinder('onion');
 
-function btnClick(){
-    document.getElementById('title').innerHTML = 'Button clicked...'
+
+
+// function add(num1, num2){
+//     console.log('The sum is: ', num1 + num2 )
+// }
+
+// add(13,5)
+
+// process salary -> deduct the tds from the salary
+//tds is 10%
+
+function tds(name, salary){
+    let tds = salary * 0.1;
+    let inHand = salary - tds;
+    console.log('The salary for', name , 'of rs.', inHand ,  'is processed.')
 }
 
-function convertUsd(){
-    let usd = document.getElementById('usd').value;
-    let inr = (usd*79.79).toFixed(2)
-    document.getElementById('inr').innerHTML = inr;
+// tds('ashish', 40000);
+// tds('nayan', 86000)
+
+function joined(){
+    document.getElementById('img').style.display = 'block';
+    document.getElementById('title').innerHTML = 'Congratulations on Joining the masterclass!!'
+}
+
+function cube(){
+   let num =  document.getElementById('number').value;
+    let result = num * num * num;
+    document.getElementById('result').innerHTML = result;
 }
