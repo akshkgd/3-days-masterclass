@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(255, 234, 194);
+    margin: 0;
+}
+.container{
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 14px;
+    width: 400px;
+    text-align: center;
+    margin: 120px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 16px 36px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+input{
+    border: 1px solid lightgray;
+    padding: 14px;
+    font-size: 17px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 50%;
+}
+.flex{
+    display: flex;
+   
+}
+input:last-child{
+    margin-left: 10px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid  rgb(215, 158, 52);
+}
+.bill{
+    font-size: 80px;
+    margin: 0;
+}
