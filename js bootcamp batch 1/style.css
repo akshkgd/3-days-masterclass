@@ -1,0 +1,53 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: bisque;
+}
+.container{
+    width: 400px;
+    margin: 60px auto;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 17px 38px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.card{
+    text-align: center;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    width: 400px;
+    margin: 80px auto;
+}
+input{
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 17px;
+    width: 50%;
+}
+.form{
+    display: flex;
+}
+input:last-child{
+    margin-left: 12px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid rgb(195, 107, 0);
+
+}
+.icon{
+    font-size: 70px;
+    margin: 0;
+}
+.title{
+    margin-top: 10px;
+}
