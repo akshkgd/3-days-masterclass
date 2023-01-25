@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    background-color: bisque;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 400px;
+    margin: 50px auto;
+}
+.btn{
+    margin-top: 10px;
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 17px 36px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card{
+    width: 400px;
+    margin: 80px auto;
+    padding: 24px;
+    border-radius: 14px;
+    background-color: #fff;
+    text-align: center;
+}
+.input{
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 50%;
+}
+.flex{
+    display: flex;
+}
+.read:focus{
+    outline: none;
+    border: 1px solid lightgray;
+}
+.input:last-child{
+    margin-left: 10px;
+}
+.input:focus{
+    outline: none;
+    border: 1px solid tomato;
+}
+.title{
+    font-size: 80px;
+    font-weight: bolder;
+    color: orangered;
+    margin: 0;
+}

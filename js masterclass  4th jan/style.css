@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 236, 210);
+}
+.container{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    width: 400px;
+    margin: 120px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn{
+    background-color: black;
+    color: whitesmoke;
+    padding: 16px 36px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border:none;
+    margin-top: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+input{
+    border: 1px solid lightgray;
+    padding: 14px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 50%;
+    font-size: 17px;
+}
+input:last-child{
+    margin-left: 12px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid rgb(255, 188, 95);
+}
