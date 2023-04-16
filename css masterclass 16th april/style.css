@@ -1,0 +1,38 @@
+/* css box model, css animations, css flexbox */
+/* responsive food ordering webpage */
+
+/* box model 
+    border => thickness, style, color
+    padding => 
+    margin => 
+*/
+.food-card{
+    transition: .2s;
+    border: 1px solid lightgray;
+    width: 260px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.food-card:hover{
+    transform: rotate(3deg);
+    width: 280px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 4px 6px 16px 12px #eee;
+}
+.food-card-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.food-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
