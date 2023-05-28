@@ -1,0 +1,127 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .signature,
+    .title {
+      float: left;
+      border-top: 1px solid #000;
+      width: 200px;
+      text-align: center;
+    }
+
+    .flex {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+        
+      width: 800px;
+      height: 600px;
+      text-align: center;
+      padding: 6px;
+      background-image: linear-gradient(260deg, #3d67ff 0%, #9773ff 50%, #efceff 80%);
+      font-family: Poppins;
+      border-radius: 26px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before,
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      /* background-color: #fff; */
+    }
+
+    .container::before {
+      top: 20px;
+      /* transform: rotate(45deg); */
+    }
+
+    .container::after {
+      bottom: 20px;
+      /* transform: rotate(-45deg); */
+    }
+
+    .content {
+        background:
+      repeating-linear-gradient( 45deg,#0000 calc(-650%/13) calc(50%/13),#fafafa 0 calc(100%/13),
+      #0000 0 calc(150%/13),#fafafa 0 calc(200%/13),
+      #0000 0 calc(250%/13),#fafafa 0 calc(300%/13)),repeating-linear-gradient( 45deg,#0000 calc(-650%/13) calc(50%/13),#fafafa 0 calc(100%/13),
+      #0000 0 calc(150%/13),#fafafa 0 calc(200%/13),
+      #0000 0 calc(250%/13),#fafafa 0 calc(300%/13)) 21px 21px,
+      repeating-linear-gradient(-45deg,#0000 calc(-650%/13) calc(50%/13),#fafafa 0 calc(100%/13),
+      #0000 0 calc(150%/13),#fafafa 0 calc(200%/13),
+      #0000 0 calc(250%/13),#fafafa 0 calc(300%/13)),repeating-linear-gradient(-45deg,#0000 calc(-650%/13) calc(50%/13),#fafafa 0 calc(100%/13),
+      #0000 0 calc(150%/13),#fafafa 0 calc(200%/13),
+      #0000 0 calc(250%/13),#fafafa 0 calc(300%/13)) 21px 21px #ffffff;
+background-size: 42px 42px;
+
+      height: 100%;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 20px;
+      position: relative;
+    }
+    
+    .circle{
+        display: none;
+        position: absolute;
+        bottom:0;
+        border: 50px solid lightgray;
+        bottom: 0;
+        right:0;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        opacity: 30%;
+        margin:-80px
+    }
+    
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+    <div class="container">
+      <div class="content">
+        <div class="back" >
+            <div class="circle"></div>
+        </div>
+        <div style="padding-top: 30px;">
+          <img src="https://learn.webdevlessons.in/logo.png" alt="Web Dev Lessons" title="Logo" style="height: 3.8rem;">
+        </div>
+        <span style="font-size:38px; font-weight:bold">Certificate of Completion</span> <br><br>
+        <span style="font-size:25px"><i>This is to certify that</i></span> <br><br>
+        <span style="font-size:22px"><b>{{LEARNERNAME}}</b></span><br /><br />
+        <span style="font-size:18px"><i>has completed the course</i></span>
+        <span style="font-size:18px">{{COURSENAME}}</span> <br /><br />
+        <span style="font-size:18px"><i>On </i></span> <span style="font-size:18px"><i>{{COMPLETEDDATE}}</i></span><br> <br> <br> <br>
+
+        <div class="flex">
+          <div class="">
+            <img src="https://codekaro.in/assets/img/ashish_sign.png" alt="">
+            <h4 style="margin: 0">Ashish Shukla</h4>
+            <p style="margin: 0">Founder Codekaro</p>
+          </div>
+          <div class="">
+            <h4 style="text-align: right;">{{SERIALNUMBER}}<br>Issued On: <b>{{DATEISSUED}}</b></h4>
+            </div>
+            </div>
+            </div>
+            </div>
+            </center>
+            </body>
+            </html>

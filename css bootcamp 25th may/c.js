@@ -101,3 +101,20 @@
 // Remember to import and use the `Provider` component from `react-redux` to provide access to the Redux store. Additionally, you can create multiple components that connect to the store and access the state or dispatch actions as needed.
 
 // This is a basic example of using Redux in a React application. You can expand on this foundation to manage more complex state and actions within your application.
+
+
+
+// custom hook
+
+import { useState } from 'react';
+
+export function useAddNumbers() {
+  const [result, setResult] = useState(null);
+
+  const addNumbers = (num1, num2) => {
+    const sum = num1 + num2;
+    setResult(sum);
+  };
+
+  return { result, addNumbers };
+}
