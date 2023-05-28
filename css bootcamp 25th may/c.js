@@ -118,3 +118,42 @@ export function useAddNumbers() {
 
   return { result, addNumbers };
 }
+
+
+// final
+import { useState } from 'react';
+
+export function useAddNumbers() {
+  const [result, setResult] = useState(null);
+
+  const addNumbers = (num1, num2) => {
+    const sum = num1 + num2;
+    setResult(sum);
+  };
+
+  return { result, addNumbers };
+}
+
+// app.js
+
+import { useAddNumbers } from './useAddNumbers';
+import './App.css';
+
+function App() {
+  const { result, addNumbers } = useAddNumbers();
+
+  const handleAddition = () => {
+    addNumbers(5, 3);};
+    return(
+    <div>
+      <div>
+      <h1>Custom Hook Example</h1>
+      <button onClick={handleAddition}>Add Numbers</button>
+      <p>Result: {result}</p>
+    </div>
+    </div>
+    )
+
+}
+
+export default App;
